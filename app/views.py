@@ -18,3 +18,7 @@ def page(path):
     # e.g. "first-post"
     page = pages.get_or_404(path)
     return render_template('page.html', page=page)
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('404.html'), 404
