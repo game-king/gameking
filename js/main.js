@@ -212,30 +212,6 @@ semantic.ready = function() {
         $example.filter('.another').show();
       }
     },
-    developerMode: function() {
-      var
-        $example = $('.example').not('.no')
-      ;
-      $developer.addClass('active');
-      $designer.removeClass('active');
-      $example
-        .each(function() {
-          $.proxy(handler.createCode, $(this))('developer');
-        })
-      ;
-    },
-    designerMode: function() {
-      var
-        $example = $('.example').not('.no')
-      ;
-      $designer.addClass('active');
-      $developer.removeClass('active');
-      $example
-        .each(function() {
-          $.proxy(handler.createCode, $(this))('designer');
-        })
-      ;
-    },
 
     getIndent: function(text) {
       var
@@ -335,36 +311,6 @@ semantic.ready = function() {
       }
     },
 
-    createAnnotation: function() {
-      if(!$(this).data('type')) {
-        $(this).data('type', 'html');
-      }
-      $(this)
-        .wrap('<div class="annotation">')
-        .parent()
-        .hide()
-      ;
-    },
-
-    resizeCode: function() {
-      $('.ace_editor')
-        .each(function() {
-          var
-            $code = $(this),
-            padding     = 20,
-            editor,
-            editorSession,
-            codeHeight
-          ;
-          $code.css('height', 'auto');
-          editor        = ace.edit($code[0]);
-          editorSession = editor.getSession();
-          codeHeight = editorSession.getScreenLength() * editor.renderer.lineHeight + padding;
-          $code.css('height', codeHeight);
-          editor.resize();
-        })
-      ;
-    },
 
     makeCode: function() {
       if(window.ace !== undefined) {
@@ -396,101 +342,6 @@ semantic.ready = function() {
       $.waypoints('refresh');
     },
 
-    initializeCode: function() {
-      var
-        $code        = $(this).show(),
-        code         = $code.html(),
-        existingCode = $code.hasClass('existing'),
-        contentType  = $code.data('type')    || 'javascript',
-        title        = $code.data('title')   || false,
-        demo         = $code.data('demo')    || false,
-        preview      = $code.data('preview') || false,
-        label        = $code.data('label')   || false,
-        displayType  = {
-          html       : 'HTML',
-          javascript : 'Javascript',
-          css        : 'CSS',
-          text       : 'Command Line',
-          sh         : 'Command Line'
-        },
-        indent     = handler.getIndent(code) || 4,
-        padding    = 20,
-        whiteSpace,
-        $label,
-        editor,
-        editorSession,
-        codeHeight
-      ;
-
-      // trim whitespace
-      whiteSpace = new RegExp('\\n\\s{' + indent + '}', 'g');
-      code = $.trim(code).replace(whiteSpace, '\n');
-
-      if(contentType == 'html') {
-        $code.text(code);
-      }
-      else {
-        $code.html(code);
-      }
-
-      // evaluate if specified
-      if($code.hasClass('evaluated')) {
-        eval(code);
-      }
-
-      // initialize
-      editor        = ace.edit($code[0]);
-      editorSession = editor.getSession();
-
-      editor.setTheme('ace/theme/github');
-      editor.setShowPrintMargin(false);
-      editor.setReadOnly(true);
-      editor.renderer.setShowGutter(false);
-      editor.setHighlightActiveLine(false);
-      editorSession.setMode('ace/mode/'+ contentType);
-      editorSession.setUseWrapMode(true);
-      editorSession.setTabSize(2);
-      editorSession.setUseSoftTabs(true);
-
-      codeHeight = editorSession.getScreenLength() * editor.renderer.lineHeight + padding;
-      $(this)
-        .height(codeHeight + 'px')
-        .wrap('<div class="ui instructive segment">')
-      ;
-      // add label
-      if(title) {
-        $('<div>')
-          .addClass('ui ignored attached top label')
-          .html('<span class="title">' + title + '</span>' + '<em>' + (displayType[contentType] || contentType) + '</em>')
-          .prependTo( $(this).parent() )
-        ;
-      }
-      if(label) {
-        $('<div>')
-          .addClass('ui ignored pointing below label')
-          .html(displayType[contentType] || contentType)
-          .insertBefore ( $(this).parent() )
-        ;
-      }
-      // add run code button
-      if(demo) {
-        $('<a>')
-          .addClass('ui ignored pointing below black label')
-          .html('Run Code')
-          .on('click', function() {
-            eval(code);
-          })
-          .insertBefore ( $(this).parent() )
-        ;
-      }
-      // add preview if specified
-      if(preview) {
-        $(code)
-          .insertAfter( $(this).parent() )
-        ;
-      }
-      editor.resize();
-    },
 
     movePeek: function() {
       if( $('.stuck .peek').size() > 0 ) {
@@ -666,7 +517,7 @@ semantic.ready = function() {
         onTabInit : handler.makeCode,
         onTabLoad : function() {
           $.proxy(handler.makeStickyColumns, this)();
-          $peekItem.removeClass('active').first().addClass('active');
+          //$peekItem.removeClass('active').first().addClass('active');
         }
       })
     ;
@@ -737,9 +588,11 @@ semantic.ready = function() {
     .on('mouseleave', handler.menu.mouseleave)
   ;
   $menu
+    .sidebar({overlay: true})
     .sidebar('attach events', '.launch.button, .launch.item')
     .sidebar('attach events', $hideMenu, 'hide')
   ;
+
   $waypoints
     .waypoint({
       continuous : false,
@@ -752,11 +605,11 @@ semantic.ready = function() {
               ? ($waypoints.index(this) - 1)
               : 0
         ;
-        $peekItem
-          .removeClass('active')
-          .eq( index )
-            .addClass('active')
-        ;
+        //$peekItem
+        //  .removeClass('active')
+        //  .eq( index )
+        //    .addClass('active')
+        //;
       }
     })
   ;
@@ -765,11 +618,11 @@ semantic.ready = function() {
       handler: function(direction) {
         if(direction == 'down') {
           if( !$('body').is(':animated') ) {
-            $peekItem
-              .removeClass('active')
-              .eq( $peekItem.size() - 1 )
-                .addClass('active')
-            ;
+            //$peekItem
+            //  .removeClass('active')
+            //  .eq( $peekItem.size() - 1 )
+            //    .addClass('active')
+            //;
           }
         }
       },
