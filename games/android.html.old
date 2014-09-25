@@ -108,10 +108,10 @@
         <b>Game King</b>
       </div>
 
-      <a class="popup item" data-content="Browser Games" href="">
+      <a class="popup item" data-content="Browser Games" href="browser.html">
         <i class="fa fa-html5"></i>
       </a>
-      <a class="popup item" data-content="Android Games" href="android.html">
+      <a class="popup item" data-content="Android Games" href="">
         <i class="fa fa-android"></i>
       </a>
       <a class="popup item" data-content="iOS Games" href="ios.html">
@@ -146,8 +146,8 @@
   <div class="peek">
     <div class="ui vertical pointing secondary menu">
       <a class="item" href="../index.html">Home</a>
-      <a class="active item red" href="">Browser Games</a>
-      <a class="item" href="android.html">Android Games</a>
+      <a class="item" href="browser.html">Browser Games</a>
+      <a class="active item green" href="">Android Games</a>
       <a class="item" href="ios.html">iOS Games</a>
     </div>
 
@@ -156,77 +156,119 @@
 
 
   <div class="segment">
-    <h2 class="ui dividing header">Browser Games</h2>
+    <h2 class="ui dividing header">Android Games</h2>
 
     <div class="ui four items">
       <div class="item">
         <div class="image">
-          <img src="http://placehold.it/350x350">
+          <img src="http://maike.me/img/awwhub.jpg" height="real_height" width="real_width"
+    onload="resizeImg(this, 100, 100);" onresize="resizeImg(this, 100, 100);">
         </div>
       </div>
       <div class="item">
         <div class="image">
-          <img src="http://placehold.it/350x350">
+          <img src="http://maike.me/img/awwhub.jpg"  id="yourImgId">
         </div>
       </div>
       <div class="item">
         <div class="image">
-          <img src="http://placehold.it/350x350">
+          <img src="http://hadonejob.com/img/full/28432343.jpg">
         </div>
       </div>
       <div class="item">
         <div class="image">
-          <img src="http://placehold.it/350x350">
+          <img src="/images/demo/highres2.jpg">
         </div>
+      </div>
+    </div>
+
+    <div class="ui four items">
+      <div class="item">
+        <div class="image">
+          <img src="/images/demo/highres2.jpg">
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="/images/demo/highres2.jpg">
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="/images/demo/highres2.jpg">
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="/images/demo/highres2.jpg">
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="ui connected items">
+  <div class="row">
+    <div class="item">
+      <div class="image">
+        <img src="http://hadonejob.com/img/full/28432343.jpg">
+      </div>
+      <div class="content">
       </div>
 
     </div>
-    <div class="ui four items">
-      <div class="item">
-        <div class="image">
-          <img src="http://placehold.it/350x350">
-        </div>
+    <div class="item">
+      <div class="image">
+        <img src="http://maike.me/img/awwhub.jpg">
       </div>
-      <div class="item">
-        <div class="image">
-          <img src="http://placehold.it/350x350">
-        </div>
+      <div class="content">
       </div>
-      <div class="item">
-        <div class="image">
-          <img src="http://placehold.it/350x350">
-        </div>
+
+    </div>
+    <div class="item">
+      <div class="image">
+        <img src="http://hadonejob.com/img/full/28432343.jpg">
       </div>
-      <div class="item">
-        <div class="image">
-          <img src="http://placehold.it/350x350">
-        </div>
+      <div class="content">
       </div>
     </div>
-    <div class="ui four items">
-      <div class="item">
-        <div class="image">
-          <img src="http://placehold.it/350x350">
-        </div>
-      </div>
-      <div class="item">
-        <div class="image">
-          <img src="http://placehold.it/350x350">
-        </div>
-      </div>
-      <div class="item">
-        <div class="image">
-          <img src="http://placehold.it/350x350">
-        </div>
-      </div>
-      <div class="item">
-        <div class="image">
-          <img src="http://placehold.it/350x350">
-        </div>
-      </div>
-    </div>
+  </div>
+</div>
+
 
   </div>
+
+
+<div>
+  <h1>Window Stats</h1>
+  <span>Width: <span class="width"></span></span>
+  <br />
+  <span>Height: <span class="height"></span></span>
+</div>
+<script type="text/javascript">
+go();
+window.addEventListener('resize', go);
+
+function go(){
+  img.height = document.documentElement.clientWidth;
+}
+</script>
+<script type="text/javascript">
+function resizeImg(img, height, width) {
+    img.height = img.width;
+}
+</script>
+
+<!--<script>
+    var resize = function() {
+        $("img").width($(window).width()).height($(window).height());
+    };
+    $(window).resize(function() {
+       resize();
+    });
+    resize();
+</script>-->
 
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
