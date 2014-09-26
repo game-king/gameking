@@ -145,9 +145,7 @@ a:hover {
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-#example #menu .hide.item {
-  display: none;
-}
+
 
 #example #menu .item .item {
   font-size: 0.875rem;
@@ -1246,9 +1244,6 @@ body.progress .ui.progress .bar {
   max-width: 800px;
 }
 
-#example .fixed .launch {
-  display: none;
-}
 #example .designer .icon {
   font-family: 'Basic Icons';
 }
