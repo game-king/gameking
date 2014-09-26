@@ -43,7 +43,7 @@ body {
   font-size: 15px;
 }
 
-body#example {
+body#maike {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif/*rtl:prepend:"Droid Arabic Kufi","Droid Sans", */;
   background: #FCFCFC url(bg.jpg) repeat;
   margin: 0px;
@@ -140,23 +140,23 @@ a:hover {
   color: #00BAFF;
 }
 
-#example #menu .item {
+#maike #menu .item {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
 
 
-#example #menu .item .item {
+#maike #menu .item .item {
   font-size: 0.875rem;
 }
-#example .segment > .dimmer {
+#maike .segment > .dimmer {
   z-index: 800;
 }
 
 /* segment headers */
-#example > .content > .page > .segment,
-#example > .segment {
+#maike > .content > .page > .segment,
+#maike > .segment {
   margin: 0px 0px 3em;
   padding-top: 70px;
   padding-bottom: 30px;
@@ -164,35 +164,35 @@ a:hover {
   border-bottom: 1px solid #DDDDDD;
 }
 
-#example > .tab.segment {
+#maike > .tab.segment {
   padding-bottom: 0em;
   margin-bottom: 2em;
 }
 
-#example > .tab.segment .fixed .tabular.menu {
+#maike > .tab.segment .fixed .tabular.menu {
   position: fixed;
   top: 50px;
 }
-#example > .tab.segment .vertical.menu {
+#maike > .tab.segment .vertical.menu {
   display: none;
   margin: 2rem 0em 1rem;
 }
-#example > .tab.segment .tabular.menu {
+#maike > .tab.segment .tabular.menu {
   margin: 2rem 0em 0em;
   border-bottom: none;
 }
-#example > .tab.segment .tabular.menu .active.item {
+#maike > .tab.segment .tabular.menu .active.item {
   background-color: #FAFAFA;
   border-bottom-color: #FAFAFA;
 }
 
 
-#example .download.menu {
+#maike .download.menu {
   margin-top: 0em;
   margin-bottom: 3rem;
 }
 
-#example .main.menu {
+#maike .main.menu {
   min-width: 320px;
   z-index: 900;
 
@@ -207,22 +207,22 @@ a:hover {
   -ms-transition: margin 0.3s ease;
   transition: margin 0.3s ease;
 }
-#example .main.menu iframe {
+#maike .main.menu iframe {
   margin: 0px 0px 0px 0px;
 }
 /* lists */
-#example .features {
+#maike .features {
   list-style-position: inside;
   margin: 10px 0px 0px;
   padding: 0px;
 }
-#example .features li {
+#maike .features li {
   list-style-type: disc;
   margin: 0px 0px 10px;
   font-weight: bold;
 }
 
-#example .advertisement {
+#maike .advertisement {
   float: right;
   margin-left: 2em;
 }
@@ -243,14 +243,14 @@ body.guide .main.container > * {
     Playground
 ---------------*/
 
-#example.playground {
+#maike.playground {
   min-width: 1000px;
 }
-#example.playground > .title.grid {
+#maike.playground > .title.grid {
   padding-top: 60px;
 
 }
-#example .ui.items .menu .item {
+#maike .ui.items .menu .item {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -260,7 +260,7 @@ body.guide .main.container > * {
     Items
 ---------------*/
 
-#example.item .text.example .item {
+#maike.item .text.maike .item {
   min-height: 150px;
 }
 
@@ -268,17 +268,17 @@ body.guide .main.container > * {
 /*--------------
     Masthead
 ---------------*/
-#example .error.masthead {
+#maike .error.masthead {
   position: absolute;
   margin-top: -290px;
   top: 50%;
   width: 100%;
 }
-#example .error.masthead .container {
+#maike .error.masthead .container {
   position: relative;
   z-index: 100;
 }
-#example .masthead {
+#maike .masthead {
   position: relative;
   overflow: hidden;
   background-color: #00B5AD;
@@ -289,7 +289,7 @@ body.guide .main.container > * {
   margin-bottom: 0px;
   border-bottom: none;
 }
-#example .masthead:before {
+#maike .masthead:before {
   background: #00B5AD url(tile-bg.png) repeat fixed 0% 0%;
   position: absolute;
   z-index: 1;
@@ -394,96 +394,96 @@ body.guide .main.container > * {
  }
 
 }
-#example .masthead .grid {
+#maike .masthead .grid {
   position: relative;
   z-index: 2;
 }
-#example .masthead .column {
+#maike .masthead .column {
   display: table;
 }
-#example .introduction {
+#maike .introduction {
   display: table-cell;
   vertical-align: top;
   width: 100%;
 }
-#example .advertisement {
+#maike .advertisement {
   float: none;
   display: table-cell;
   vertical-align: top;
   padding-left: 2em;
 }
-#example #carbonads-container {
+#maike #carbonads-container {
   float: right;
 }
-#example .advertisement .carbonad {
+#maike .advertisement .carbonad {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-#example .advertisement .carbonad-text {
+#maike .advertisement .carbonad-text {
   height: auto;
   font-size: 12px;
   line-height: 1.3;
 }
-#example .carbonad-tag {
+#maike .carbonad-tag {
   text-align: left;
 }
-#example .inverted.advertisement .carbonad {
+#maike .inverted.advertisement .carbonad {
   background-color: rgba(0, 31, 30, 0.5);
   border: none;
   overflow: hidden;
   height: auto;
   padding: 6px 8px 15px;
 }
-#example .inverted.advertisement .carbonad-text {
+#maike .inverted.advertisement .carbonad-text {
   color: rgba(255, 255, 255, 0.6);
 }
-#example .inverted.advertisement .carbonad-tag {
+#maike .inverted.advertisement .carbonad-tag {
   margin-top: 10px;
   color: rgba(255, 255, 255, 0.4);
 }
-#example .inverted.advertisement .carbonad-tag a {
+#maike .inverted.advertisement .carbonad-tag a {
   color: rgba(255, 255, 255, 0.8);
 }
-#example .inverted.advertisement .carbonad-tag a:hover {
+#maike .inverted.advertisement .carbonad-tag a:hover {
   color: #FFFFFF;
 }
 
 
-#example .masthead .labeled.button {
+#maike .masthead .labeled.button {
   position: relative;
   left: 0px;
   top: 0px;
   width: auto !important;
   margin-right: 1em;
 }
-#example .masthead.segment h1 {
+#maike .masthead.segment h1 {
   font-size: 5em;
   color: #FFFFFF;
   line-height: 1.2;
   margin: -20px 0px 0px;
   padding-bottom: 0px;
 }
-#example .masthead strike {
+#maike .masthead strike {
   color: rgba(0, 0, 0, 0.2);
 }
-#example .masthead h2 {
+#maike .masthead h2 {
   font-weight: normal;
   margin: -10px 0 16px 0px;
   font-size: 1.75em;
   border-bottom: none;
   line-height: 1;
 }
-#example .masthead .menu {
+#maike .masthead .menu {
   width: 375px;
 }
-#example .masthead p {
+#maike .masthead p {
   font-size: 1.5em;
   margin: 1em 0em 1.5em;
   padding: 0px;
 }
-#example .footer.link.list {
+#maike .footer.link.list {
   display: block;
   text-align: center;
   margin-bottom: 1.5rem;
@@ -500,83 +500,83 @@ body.guide .main.container > * {
 
 
 /* content */
-#example .container {
+#maike .container {
   width: 915px;
   margin: 0px auto;
 }
 
-#example .solid,
-#example .stripe {
+#maike .solid,
+#maike .stripe {
   padding: 50px 0px;
 }
 
-#example .dark.stripe {
+#maike .dark.stripe {
   background-color: #333333;
   background: url(dark-bg.png) repeat;
   color: #FFFFFF;
 }
-#example .stripe .column .label {
+#maike .stripe .column .label {
   margin-bottom: 1em;
 }
 
-#example .solid {
+#maike .solid {
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
 }
-#example .solid .column {
+#maike .solid .column {
   color: #555555;
 }
-#example .solid .column p b {
+#maike .solid .column p b {
   color: rgba(0, 0, 0, 0.9);
 }
-#example .solid .column p {
+#maike .solid .column p {
   color: rgba(0, 0, 0, 0.5);
 }
-#example .stripe .message {
+#maike .stripe .message {
   margin: 2em 0em;
 }
 
 
-#example .shortcuts {
+#maike .shortcuts {
   float: right;
   clear: both;
 }
-#example .launch.button {
+#maike .launch.button {
   position: fixed;
   top: 63px;
   z-index: 500;
   width: 70px;
 }
-#example.index .main.menu {
+#maike.index .main.menu {
   top: 0px;
 }
-#example.index pre.console {
+#maike.index pre.console {
   height: 120px;
 }
-#example.index .attached.launch.button {
+#maike.index .attached.launch.button {
   top: 96px;
 }
-#example .launch.button .text {
+#maike .launch.button .text {
   display: inline-block;
   display: none;
 }
 
-#example .main.container {
+#maike .main.container {
   position: relative;
 }
-#example .main.container > h2 {
+#maike .main.container > h2 {
   -webkit-transition: 0.5s color ease;
   -moz-transition: 0.5s color ease;
   -o-transition: 0.5s color ease;
   -ms-transition: 0.5s color ease;
   transition: 0.5s color ease;
 }
-#example .swap {
+#maike .swap {
   background: url(http://beta.myfav.es/images/themes/bg/subtle/subtle-handmade-paper.png) repeat;
 }
-#example .peek {
+#maike .peek {
   position: absolute;
   top: 0px;
   left: -230px;
@@ -589,80 +589,80 @@ body.guide .main.container > * {
   transition: padding 0.3s ease;*/
 }
 
-#example .ui.tab.segment {
+#maike .ui.tab.segment {
   padding: 1.5em 2em;
 }
-#example .example .circular.segment {
+#maike .maike .circular.segment {
   width: 175px;
   height: 175px;
 }
 
-#example.popup .example .popup {
+#maike.popup .maike .popup {
   color: #FF0000;
 }
-#example .position.example .icon {
+#maike .position.maike .icon {
   position: absolute;
   margin: 0em;
   padding: 0.5em !important;
 }
-#example .position.example > .segment {
+#maike .position.maike > .segment {
   width: 250px;
   height: 250px;
 }
-#example .position.example .segment .icon:nth-of-type(1) {
+#maike .position.maike .segment .icon:nth-of-type(1) {
   top: 3em;
   left: 3em;
 }
-#example .position.example .segment .icon:nth-of-type(2) {
+#maike .position.maike .segment .icon:nth-of-type(2) {
   top: 3em;
   left: 50%;
   margin-left: -1em;
 }
-#example .position.example .segment .icon:nth-of-type(3) {
+#maike .position.maike .segment .icon:nth-of-type(3) {
   top: 3em;
   right: 3em;
 }
-#example .position.example .segment .icon:nth-of-type(4) {
+#maike .position.maike .segment .icon:nth-of-type(4) {
   top: 50%;
   margin-top: -1em;
   right: 3em;
 }
-#example .position.example .segment .icon:nth-of-type(5) {
+#maike .position.maike .segment .icon:nth-of-type(5) {
   bottom: 3em;
   right: 3em;
 }
-#example .position.example .segment .icon:nth-of-type(6) {
+#maike .position.maike .segment .icon:nth-of-type(6) {
   bottom: 3em;
   left: 50%;
   margin-left: -1em;
 }
-#example .position.example .segment .icon:nth-of-type(7) {
+#maike .position.maike .segment .icon:nth-of-type(7) {
   bottom: 3em;
   left: 3em;
 }
-#example .position.example .segment .icon:nth-of-type(8) {
+#maike .position.maike .segment .icon:nth-of-type(8) {
   top: 50%;
   margin-top: -1em;
   left: 3em;
 }
 
-#example .main.ui.grid {
+#maike .main.ui.grid {
   position: relative;
 }
-#example .example .toggle.button {
+#maike .maike .toggle.button {
   min-width: 200px;
 }
-#example .example .language.label {
+#maike .maike .language.label {
   margin: 1em 0em 0.75em;
 }
-#example .icon.example .grid {
+#maike .icon.maike .grid {
   margin-top: 1.5rem;
   text-align: left;
 }
-#example .icon.example .grid .code {
+#maike .icon.maike .grid .code {
   position: static;
 }
-#example .icon.example .grid .column {
+#maike .icon.maike .grid .column {
   opacity: 0.8;
   margin-bottom: 2em;
   text-align: center;
@@ -689,7 +689,7 @@ body.guide .main.container > * {
     opacity 0.3s ease-out
   ;
 }
-#example .icon.example .column .icon {
+#maike .icon.maike .column .icon {
   opacity: 1;
   color: #333333;
   display: block;
@@ -713,7 +713,7 @@ body.guide .main.container > * {
   ;
   -webkit-backface-visibility: hidden;
 }
-#example .icon.example .grid .column:hover .icon {
+#maike .icon.maike .grid .column:hover .icon {
   color: #009FDA;
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
@@ -721,81 +721,81 @@ body.guide .main.container > * {
   -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
-#example .another.icon.example {
+#maike .another.icon.maike {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#example .another.example {
+#maike .another.maike {
   margin-top: 0em;
   padding-top: 2em;
   border-top: none;
 }
-#example .another.example i.code {
+#maike .another.maike i.code {
   top: 0px;
 }
-#example .example > p {
+#maike .maike > p {
   color: #888888;
 }
 
-#example .peek .menu .active:nth-child(1) {
+#maike .peek .menu .active:nth-child(1) {
   border-right-color: #00B9F0;
   color: #00B9F0;
 }
-#example .peek .menu .active:nth-child(2) {
+#maike .peek .menu .active:nth-child(2) {
   border-right-color: #56BB73;
   color: #56BB73;
 }
-#example .peek .menu .active:nth-child(3) {
+#maike .peek .menu .active:nth-child(3) {
   border-right-color: #EF3F49;
   color: #EF3F49;
 }
-#example .peek .menu .active:nth-child(4) {
+#maike .peek .menu .active:nth-child(4) {
   border-right-color: #A24096;
   color: #A24096;
 }
-#example .main h2.group {
+#maike .main h2.group {
   color: #A24096;
 }
 
-#example .peek > .menu {
+#maike .peek > .menu {
   margin-left: 0px;
   width: 180px;
 }
-/* #example .peek > .menu.animating > .active {
+/* #maike .peek > .menu.animating > .active {
   background-color: transparent;
   border: none;
   padding-left: 0.95em;
 }
-#example .peek > .menu.animating > .active:after {
+#maike .peek > .menu.animating > .active:after {
   background-color: #FFFFFF;
 } */
 
 /* overview mode */
 
-#example.overview h2.ui.header {
+#maike.overview h2.ui.header {
   margin-bottom: 0em;
 }
 /*
-#example .ui.header ~ .ui.message a,
-#example .ui.header ~ p a {
+#maike .ui.header ~ .ui.message a,
+#maike .ui.header ~ p a {
   font-weight: bold;
 }
 */
-#example.overview .example {
+#maike.overview .maike {
   margin: 0em;
   min-height: 0px !important;
   overflow: hidden;
   padding: 0.5em 0em;
 }
-#example.overview .example .ui.header,
-#example.overview .example p {
+#maike.overview .maike .ui.header,
+#maike.overview .maike p {
   float: right;
   font-size: 1em;
   font-weight: normal;
   margin: 0;
   padding: 0;
 }
-#example.overview .example p {
+#maike.overview .maike p {
   float: left;
   font-size: 1rem;
   padding: 0em 0em 0em 0.3em;
@@ -803,7 +803,7 @@ body.guide .main.container > * {
 }
 
 
-#example .sticky-wrapper.stuck {
+#maike .sticky-wrapper.stuck {
   height: 0px !important;
   padding-top: 55px;
   -webkit-transition:
@@ -827,78 +827,78 @@ body.guide .main.container > * {
     opacity 0.3s ease-out
   ;
 }
-#example .sticky-wrapper.stuck .peek {
+#maike .sticky-wrapper.stuck .peek {
   position: fixed;
   top: 95px;
   left: 50%;
   margin-left: -685px;
 }
-#example.left.pushed .sticky-wrapper .peek {
+#maike.left.pushed .sticky-wrapper .peek {
   margin-left: -132.5px;
   padding-left: 132.5px;
 }
 
-#example.left.pushed .sticky-wrapper.stuck .peek {
+#maike.left.pushed .sticky-wrapper.stuck .peek {
   margin-left: -817.5px;
   padding-left: 132.5px;
 }
 
-#example .settings.table {
+#maike .settings.table {
   margin-bottom: 20px;
 }
-#example .settings.table td:first-child {
+#maike .settings.table td:first-child {
   font-weight: bold;
 }
-#example .settings.table td:nth-child(2n) {
+#maike .settings.table td:nth-child(2n) {
   width: 100px;
 }
 
-#example .existing.annotation {
+#maike .existing.annotation {
   /*display: none;*/
 }
-/*#example .segment p:first-of-type {
+/*#maike .segment p:first-of-type {
   margin-top: 0em;
 }*/
 
-/* example code reskin */
-#example div.code.hide {
+/* maike code reskin */
+#maike div.code.hide {
   display: none;
 }
 /*rtl:ignore*/
-#example div.code {
+#maike div.code {
   position: relative;
   width: 100%;
   height: 200px;
   text-align: left;
   direction:ltr;
 }
-#example div.code {
+#maike div.code {
   margin: -1em;
   font-size: 14px;
   padding: 5px 0px;
   background-color: transparent;
 }
-#example .label + div.code {
+#maike .label + div.code {
   margin-top: 1.5em;
 }
-#example div.code .ace_gutter {
+#maike div.code .ace_gutter {
   background-color: #FAFAFA;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   color: #999999;
 }
-#example div.code .ace_gutter-cell {
+#maike div.code .ace_gutter-cell {
   padding-right: 20px;
   padding-left: 10px;
 }
-#example div.code .ace_bracket {
+#maike div.code .ace_bracket {
   background-color: rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-#example div.code .ace_indent-guide {
+#maike div.code .ace_indent-guide {
   position: relative;
   background: none;
 }
-/* #example div.code .ace_indent-guide:after {
+/* #maike div.code .ace_indent-guide:after {
   content: '';
   position: absolute;
   top: 0px;
@@ -907,46 +907,46 @@ body.guide .main.container > * {
   border-left: 1px solid #ECF5F3;
 } */
 
-#example table .instructive.segment {
+#maike table .instructive.segment {
   background-color: transparent;
   border: 0px;
   box-shadow: none;
   padding: 0em;
   margin: -0.4em -0.7em;
 }
-#example table .instructive.segment .code {
+#maike table .instructive.segment .code {
   margin: 0em;
 }
-#example table .instructive.segment div.code .ace_identifier,
-#example table .instructive.segment div.code .ace_line {
+#maike table .instructive.segment div.code .ace_identifier,
+#maike table .instructive.segment div.code .ace_line {
   color: #555555;
 }
 
-#example .ui.label + .instructive.segment {
+#maike .ui.label + .instructive.segment {
   margin-top: 0em;
 }
-#example .instructive.segment em {
+#maike .instructive.segment em {
   font-style: normal;
   color: rgba(0, 0, 0, 0.4);
 }
-#example .instructive.segment .title + em {
+#maike .instructive.segment .title + em {
   float: right;
 }
 
 
-#example div.code .ace_gutter,
-#example div.code .ace_scroller {
+#maike div.code .ace_gutter,
+#maike div.code .ace_scroller {
   background-color: transparent;
   overflow: visible;
   margin: 14px 10px;
 }
-#example div.code .ace_scrollbar {
+#maike div.code .ace_scrollbar {
   overflow: hidden;
   background-color: transparent;
 }
 
-#example div.code .ace_line,
-#example div.code .ace_line span {
+#maike div.code .ace_line,
+#maike div.code .ace_line span {
   -webkit-transition:
     color 1s ease-out
   ;
@@ -963,115 +963,115 @@ body.guide .main.container > * {
     color 1s ease-out
   ;
 }
-#example div.code .ace_line {
+#maike div.code .ace_line {
   color: #555555;
 }
-#example div.code .ace_tag {
+#maike div.code .ace_tag {
   color: #DCBCD3;
 }
-#example div.code .ace_attribute-name {
+#maike div.code .ace_attribute-name {
   color: #F4C5C5;
 }
-#example div.code .ace_content {
+#maike div.code .ace_content {
 }
-#example div.code .ace_string {
+#maike div.code .ace_string {
   color: #00A59D;
 }
-#example div.code .ace_cursor {
+#maike div.code .ace_cursor {
   border-left: none;
 }
-#example div.code .ace_paren {
+#maike div.code .ace_paren {
   color: #CCCCCC;
 }
-#example div.code .ace_keyword {
+#maike div.code .ace_keyword {
   color: #CCCCCC;
 }
-#example div.code .ace_identifier {
+#maike div.code .ace_identifier {
   color: #CCCCCC;
 }
-#example div.code .ace_punctuation {
+#maike div.code .ace_punctuation {
   color: #CCCCCC;
 }
-#example div.code .ace_active_line {
+#maike div.code .ace_active_line {
   background-color: #FBFBE5;
 }
 
 /* Hovered Style */
 
-#example div.code:hover .ace_line {
+#maike div.code:hover .ace_line {
   color: #555555;
 }
-#example div.code:hover .ace_tag {
+#maike div.code:hover .ace_tag {
   color: #892A6F;
 }
-#example div.code:hover .ace_attribute-name {
+#maike div.code:hover .ace_attribute-name {
   color: #934E4E;
 }
-#example div.code:hover .ace_content {
+#maike div.code:hover .ace_content {
 }
-#example div.code:hover .ace_string {
+#maike div.code:hover .ace_string {
   color: #00A59D;
 }
-#example div.code:hover .ace_cursor {/*
+#maike div.code:hover .ace_cursor {/*
   border-left: 1px solid #AAAAAA;*/
 }
-#example div.code:hover .ace_paren {
+#maike div.code:hover .ace_paren {
   color: #555555;
 }
-#example div.code:hover .ace_keyword {
+#maike div.code:hover .ace_keyword {
   color: #555555;
 }
-#example div.code:hover .ace_identifier {
+#maike div.code:hover .ace_identifier {
   color: #555555;
 }
-#example div.code:hover .ace_scrollbar {
+#maike div.code:hover .ace_scrollbar {
   overflow: hidden !important;
 }
-#example div.code:hover .ace_punctuation {
+#maike div.code:hover .ace_punctuation {
   color: #555555;
 }
-#example div.code:hover .ace_active_line {
+#maike div.code:hover .ace_active_line {
   background-color: #FBFBE5;
 }
 
 
 
-/* examples */
-#example .no.example i.code {
+/* maikes */
+#maike .no.maike i.code {
   display: none;
 }
 
-#example .example:first-child,
-#example h2 + .example,
-#example h3 + .example,
-#example h4 + .example {
+#maike .maike:first-child,
+#maike h2 + .maike,
+#maike h3 + .maike,
+#maike h4 + .maike {
   margin-top: 0px;
   padding-top: 0px;
   border-top: none;
 }
-#example h2 + .example i.code,
-#example h3 + .example i.code,
-#example h4 + .example i.code {
+#maike h2 + .maike i.code,
+#maike h3 + .maike i.code,
+#maike h4 + .maike i.code {
   top: 0px;
 }
-#example .example > h4 {
+#maike .maike > h4 {
   margin-bottom: 0em;
 }
 
-#example .clearing.example {
+#maike .clearing.maike {
   clear: both;
 }
-#example .example {
+#maike .maike {
   margin: 1em 0em;
   padding: 1em 0em;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 /*  clear: both;*/
   position: relative;
 }
-#example .example .grid i.code {
+#maike .maike .grid i.code {
   right: 25%;
 }
-#example .example i.code {
+#maike .maike i.code {
   cursor: pointer;
   position: absolute;
   top: 2em;
@@ -1088,41 +1088,41 @@ body.guide .main.container > * {
   transition: opacity 0.3s ease-out;
 }
 
-#example .example > i.code:before {
+#maike .maike > i.code:before {
   font-family: 'Basic Icons';
   content: '\e714';
 }
-#example .example:hover i.code {
+#maike .maike:hover i.code {
   opacity: 0.7;
 }
-#example .example:hover i.code:hover {
+#maike .maike:hover i.code:hover {
   opacity: 1;
 }
 
-#example .highlighted.example {
+#maike .highlighted.maike {
   min-height: 390px;
 }
-#example .highlighted.example .grid,
-#example .ui.type.items .image .grid {
+#maike .highlighted.maike .grid,
+#maike .ui.type.items .image .grid {
   -webkit-animation: grid 15s ease infinite;
   -moz-animation: grid 15s ease infinite;
   background-color: #F6F6F6;
   margin: 0em auto;
 }
-#example .highlighted.example .grid .row,
-#example .ui.type.items .image .grid .row {
+#maike .highlighted.maike .grid .row,
+#maike .ui.type.items .image .grid .row {
   border-top: 1px solid #DDDDDD;
 }
-#example .highlighted.example .grid .column,
-#example .ui.type.items .image .grid .column {
+#maike .highlighted.maike .grid .column,
+#maike .ui.type.items .image .grid .column {
   background-color: #F4F4F4;
   min-height: 50px;
   -webkit-box-shadow: 0px 0px 0px 1px #E2E2E2;
   -moz-box-shadow: 0px 0px 0px 1px #E2E2E2;
   box-shadow: 0px 0px 0px 1px #E2E2E2;
 }
-#example .highlighted.example .grid .segment,
-#example .ui.type.items .image .grid .segment {
+#maike .highlighted.maike .grid .segment,
+#maike .ui.type.items .image .grid .segment {
   min-height: 50px;
   text-align: center;
   padding-left: 0em;
@@ -1179,11 +1179,11 @@ body.guide .main.container > * {
 }
 
 
-#example .ui.type.items > .item {
+#maike .ui.type.items > .item {
   min-height: 255px;
 }
 
-#example .ui.type.items > .item > .image {
+#maike .ui.type.items > .item > .image {
   padding: 1em;
   height: 165px;
   vertical-align: middle;
@@ -1240,20 +1240,20 @@ body.progress .ui.progress .bar {
 }
 
 
-#example.feed .example .segment {
+#maike.feed .maike .segment {
   max-width: 800px;
 }
 
-#example .designer .icon {
+#maike .designer .icon {
   font-family: 'Basic Icons';
 }
 
-#example .fixed.column .sticky-wrapper {
+#maike .fixed.column .sticky-wrapper {
   height: 0px !important;
 }
 
-#example .fixed.column .fixed,
-#example .fixed.segment .fixed {
+#maike .fixed.column .fixed,
+#maike .fixed.segment .fixed {
   position: fixed;
   top: 65px;
   -webkit-perspective: 2000px;
@@ -1270,56 +1270,56 @@ body.progress .ui.progress .bar {
 
 
 @media only screen and (max-width : 1725px) {
-  #example .container {
+  #maike .container {
     width: auto;
     margin-right: 100px;
     margin-left: 325px;
   }
-  #example.index .container {
+  #maike.index .container {
     margin-left: 8em;
     margin-right: 8em;
   }
-  #example .sticky-wrapper.stuck .peek {
+  #maike .sticky-wrapper.stuck .peek {
     margin-left: 0px;
     left: 95px;
   }
-  #example.left.pushed .sticky-wrapper .peek {
+  #maike.left.pushed .sticky-wrapper .peek {
     padding-left: 275px;
     margin-left: -275px;
   }
-  #example.left.pushed .sticky-wrapper.stuck .peek {
+  #maike.left.pushed .sticky-wrapper.stuck .peek {
     margin-left: 0px;
     padding-left: 275px;
   }
 }
 @media only screen and (max-width : 1500px) {
-  #example.index .icon.header .icon {
+  #maike.index .icon.header .icon {
     font-size: 3em;
   }
 }
 
 @media only screen and (max-width : 1050px) {
-  #example .fixed .section,
-  #example .fixed .title b {
+  #maike .fixed .section,
+  #maike .fixed .title b {
     display: none;
   }
-  #example .stripe .header .code.icon {
+  #maike .stripe .header .code.icon {
     display: none;
   }
-  #example .fixed .container {
+  #maike .fixed .container {
     width: auto;
     margin: 0px auto;
   }
-  #example .attached.launch.button {
+  #maike .attached.launch.button {
     display: none;
   }
-  #example .fixed .launch {
+  #maike .fixed .launch {
     display: inline-block;
   }
-  #example .sticky-wrapper {
+  #maike .sticky-wrapper {
     display: none;
   }
-  #example .container {
+  #maike .container {
     width: auto;
     margin: 0% 30px 0px;
     top: 50px;
@@ -1329,62 +1329,62 @@ body.progress .ui.progress .bar {
   pre.console {
     height: 150px;
   }
-  #example.index .masthead {
+  #maike.index .masthead {
     text-align: center;
     padding: 50px 0px 15px;
   }
-  #example.index .masthead h1 {
+  #maike.index .masthead h1 {
     font-size: 3em;
   }
-  #example.index .masthead h1 .icon {
+  #maike.index .masthead h1 .icon {
     display: none;
   }
-  #example.index .masthead .button {
+  #maike.index .masthead .button {
     font-size: 1.1em;
     margin-bottom: 0.5em;
   }
-  #example.index .masthead h2 {
+  #maike.index .masthead h2 {
     font-size: 1.25em;
     margin: 0em 0em 1em;
   }
-  #example.index .masthead p {
+  #maike.index .masthead p {
     font-size: 1.35em;
   }
-  #example.index .container {
+  #maike.index .container {
     margin-left: 2em;
     margin-right: 2em;
   }
-  #example.index .icon.header .icon {
+  #maike.index .icon.header .icon {
     font-size: 3em;
   }
-  #example .introduction {
+  #maike .introduction {
     display: block;
   }
-  #example .advertisement {
+  #maike .advertisement {
     display: block;
     margin: 1em 0em;
     padding: 0em;
   }
-  #example #menu .hide.item {
+  #maike #menu .hide.item {
     display: block;
   }
-  #example #menu .item > .icon {
+  #maike #menu .item > .icon {
     font-size: 1em !important;
   }
-  #example .inverted.advertisement .carbonad {
+  #maike .inverted.advertisement .carbonad {
     height: 109px;
   }
-  #example .inverted.advertisement .carbonad-img {
+  #maike .inverted.advertisement .carbonad-img {
     margin-top: 0px;
   }
-  #example #carbonads-container {
+  #maike #carbonads-container {
     float: none;
   }
-  #example .carbonad {
+  #maike .carbonad {
     width: auto;
   }
-  #example .carbonad-text,
-  #example .carbonad-tag {
+  #maike .carbonad-text,
+  #maike .carbonad-tag {
     float: none;
     display: block;
     text-align: left;
@@ -1395,44 +1395,44 @@ body.progress .ui.progress .bar {
 
 
 @media only screen and (max-width : 600px) {
-  #example .icon.example .grid .column {
+  #maike .icon.maike .grid .column {
     width: 33.33%;
   }
 }
 
 
 @media only screen and (max-width : 600px) {
-  #example .main.menu .borderless.item {
+  #maike .main.menu .borderless.item {
     display: none;
   }
-  #example .fixed .developer,
-  #example .fixed .designer,
-  #example .fixed .previous,
-  #example .fixed .next {
+  #maike .fixed .developer,
+  #maike .fixed .designer,
+  #maike .fixed .previous,
+  #maike .fixed .next {
     display: none;
   }
-  #example > .tab.segment .tabular.menu {
+  #maike > .tab.segment .tabular.menu {
     display: none;
   }
 
-  #example > .tab.segment .vertical.menu {
+  #maike > .tab.segment .vertical.menu {
     display: block;
   }
 }
 @media only screen and (max-width : 450px) {
-  #example .main.menu .icon.item {
+  #maike .main.menu .icon.item {
     display: none;
   }
-  #example .main.menu .github.item {
+  #maike .main.menu .github.item {
     display: block;
   }
-  #example .main.menu .github.item:before {
+  #maike .main.menu .github.item:before {
     display: none;
   }
-  #example .carbonad {
+  #maike .carbonad {
     height: 135px;
   }
-  #example .carbonad .carbonad-text {
+  #maike .carbonad .carbonad-text {
     width: 90px;
   }
 }
@@ -1440,22 +1440,22 @@ body.progress .ui.progress .bar {
 
 
 @media only screen and (min-width : 1725px) {
-  #example .container {
+  #maike .container {
     width: 1100px;
   }
-  #example .sticky-wrapper.stuck .peek {
+  #maike .sticky-wrapper.stuck .peek {
     margin-left: -780px;
   }
-  #example.left.pushed .main.menu {
+  #maike.left.pushed .main.menu {
     margin-left: -132px;
   }
 }
 
 @media only screen and (min-width : 2300px) {
-  #example .container {
+  #maike .container {
     width: 1320px;
   }
-  #example .sticky-wrapper.stuck .peek {
+  #maike .sticky-wrapper.stuck .peek {
     margin-left: -890px;
   }
 }
@@ -1463,53 +1463,53 @@ body.progress .ui.progress .bar {
 
 
 @media only screen and (max-width : 998px) {
-  #example.index .main.menu .container {
+  #maike.index .main.menu .container {
     width: auto;
     padding: 0% 4%;
   }
-  #example.transition .examples {
+  #maike.transition .maikes {
     width: 100%;
   }
-  #example.transition .examples .pointing.below.label {
+  #maike.transition .maikes .pointing.below.label {
     display: none;
   }
 }
 @media only screen and (min-width : 998px) {
-  #example.index .main.menu .container {
+  #maike.index .main.menu .container {
     width: auto;
     padding: 0% 8%;
   }
-  #example .examples {
+  #maike .maikes {
     margin-right: 400px;
   }
-  #example .fixed.column,
-  #example .fixed.column .fixed {
+  #maike .fixed.column,
+  #maike .fixed.column .fixed {
     float: right;
     width: 300px;
   }
 }
 @media only screen and (min-width : 1500px) {
-  #example.index .main.menu .container {
+  #maike.index .main.menu .container {
     width: auto;
     padding: 0% 13%;
   }
-  #example .examples {
+  #maike .maikes {
     margin-right: 500px;
   }
-  #example .fixed.column,
-  #example .fixed.column .fixed  {
+  #maike .fixed.column,
+  #maike .fixed.column .fixed  {
     float: right;
     width: 400px;
   }
 }
 @media only screen and (min-width : 1750px) {
-  #example.index .main.menu .container {
+  #maike.index .main.menu .container {
     width: auto;
     padding: 0% 18%;
   }
 }
 @media only screen and (min-width : 2000px) {
-  #example.index .main.menu .container {
+  #maike.index .main.menu .container {
     width: auto;
     padding: 0% 23%;
   }

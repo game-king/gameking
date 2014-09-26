@@ -49,8 +49,8 @@ semantic.ready = function() {
 
     $helpPopup        = $('.header .help.icon'),
 
-    $example          = $('.example'),
-    $shownExample     = $example.filter('.shown'),
+    $maike          = $('.maike'),
+    $shownmaike     = $maike.filter('.shown'),
 
     $developer        = $('.developer.item'),
     $overview         = $('.overview.item, .overview.button'),
@@ -73,7 +73,7 @@ semantic.ready = function() {
   handler = {
 
     createIcon: function() {
-      $example
+      $maike
         .each(function(){
           $('<i/>')
             .addClass('icon code')
@@ -102,7 +102,7 @@ semantic.ready = function() {
       tick: function() {
 
       },
-      examples: function(json) {
+      maikes: function(json) {
         var
           types      = json['Types'],
           text       = json['Text'],
@@ -191,25 +191,25 @@ semantic.ready = function() {
       var
         $button  = $(this),
         $body    = $('body'),
-        $example = $('.example')
+        $maike = $('.maike')
       ;
       $body.toggleClass('overview');
       $button.toggleClass('active');
       if($body.hasClass('overview')) {
         $developer.addClass('disabled').popup('destroy');
         $designer.addClass('disabled').popup('destroy');
-        $example.each(function() {
-          $(this).children().not('.ui.header:eq(0), .example p:eq(0)').hide();
+        $maike.each(function() {
+          $(this).children().not('.ui.header:eq(0), .maike p:eq(0)').hide();
         });
-        $example.filter('.another').hide();
+        $maike.filter('.another').hide();
       }
       else {
         $developer.removeClass('disabled').popup();
         $designer.removeClass('disabled').popup();
-        $example.each(function() {
-          $(this).children().not('.ui.header:eq(0), .example p:eq(0), .annotation').show();
+        $maike.each(function() {
+          $(this).children().not('.ui.header:eq(0), .maike p:eq(0), .annotation').show();
         });
-        $example.filter('.another').show();
+        $maike.filter('.another').show();
       }
     },
 
@@ -241,11 +241,11 @@ semantic.ready = function() {
 
     generateCode: function() {
       var
-        $example    = $(this).closest('.example'),
-        $annotation = $example.find('.annotation'),
+        $maike    = $(this).closest('.maike'),
+        $annotation = $maike.find('.annotation'),
         $code       = $annotation.find('.code'),
-        $header     = $example.children('.ui.header:first-of-type').eq(0).add('p:first-of-type'),
-        $demo       = $example.children().not($header).not('i.code:first-child, .code, .instructive, .language.label, .annotation, br, .ignore, .ignored'),
+        $header     = $maike.children('.ui.header:first-of-type').eq(0).add('p:first-of-type'),
+        $demo       = $maike.children().not($header).not('i.code:first-child, .code, .instructive, .language.label, .annotation, br, .ignore, .ignored'),
         code        = ''
       ;
       if( $code.size() === 0) {
@@ -258,17 +258,17 @@ semantic.ready = function() {
           })
         ;
       }
-      $example.data('code', code);
+      $maike.data('code', code);
       return code;
     },
     createCode: function(type) {
       var
-        $example    = $(this).closest('.example'),
-        $header     = $example.children('.ui.header:first-of-type').eq(0).add('p:first-of-type'),
-        $annotation = $example.find('.annotation'),
+        $maike    = $(this).closest('.maike'),
+        $header     = $maike.children('.ui.header:first-of-type').eq(0).add('p:first-of-type'),
+        $annotation = $maike.find('.annotation'),
         $code       = $annotation.find('.code'),
-        $demo       = $example.children().not($header).not('i.code:first-child, .code, .instructive, .language.label, .annotation, br, .ignore, .ignored'),
-        code        = $example.data('code') || $.proxy(handler.generateCode, this)()
+        $demo       = $maike.children().not($header).not('i.code:first-child, .code, .instructive, .language.label, .annotation, br, .ignore, .ignored'),
+        code        = $maike.data('code') || $.proxy(handler.generateCode, this)()
       ;
 
       if( $code.hasClass('existing') ) {
@@ -280,7 +280,7 @@ semantic.ready = function() {
       if($annotation.size() === 0) {
         $annotation = $('<div/>')
           .addClass('annotation')
-          .appendTo($example)
+          .appendTo($maike)
         ;
       }
 
@@ -529,13 +529,13 @@ semantic.ready = function() {
 
   handler.createIcon();
 
-  $example
+  $maike
     .one('mousemove', handler.generateCode)
     .find('i.code')
       .on('click', handler.createCode)
   ;
 
-  $shownExample
+  $shownmaike
     .each(handler.createCode)
   ;
 
