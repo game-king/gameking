@@ -38,13 +38,19 @@ h3::selection {
              Global
 *******************************/
 
+@font-face {
+    font-family: "NotoSans-Regular";
+    src: url("../fonts/NotoSans-Regular.ttf");
+}
+
+
 html,
 body {
   font-size: 15px;
 }
 
 body#maike {
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif/*rtl:prepend:"Droid Arabic Kufi","Droid Sans", */;
+  font-family: "NotoSans-Regular", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif/*rtl:prepend:"Droid Arabic Kufi","Droid Sans", */;
   /*background: #FCFCFC url(bg.jpg) repeat;*/
   margin: 0px;
   padding: 0px;
@@ -60,7 +66,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif/*rtl:prepend:"Droid Arabic Kufi","Droid Sans", */;
+  font-family: "NotoSans-Regular", "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif/*rtl:prepend:"Droid Arabic Kufi","Droid Sans", */;
 }
 
 /*
