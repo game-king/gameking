@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Game King</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+  {% block styles %}{% endblock %}
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/history.js"></script>
+  <script src="js/easing.js"></script>
+  <script src="js/tablesort.js"></script>
+  <script src="js/waypoints.js"></script>
+  <script src="js/semantic.min.js"></script>
+  <script src="js/main.js"></script>
+  {% block scripts %}{% endblock %}
+</head>
+<body id="maike" ontouchstart="">
+  <!--[if lt IE 8]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://www.google.com/chrome/browser/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+{% include "_sidenav.html" %}
+{% include "_topnavbar.html" %}
+<div class="main container">
+{% block contentnav %}{% endblock %}
+{% block body %}{% endblock %}
+</div>{% include "_analytics.html" %}
+</body>
+</html>
