@@ -163,6 +163,9 @@
 <script>
 $(window).resize(function(){
 
-      $('#width-example').height($('#width-example').width());
+      // If there are multiple elements with the same class, "main"
+      $('.width-example').each(function() {
+          $(this).height($(this).width());
+      });
 }).resize();
 </script>{% endblock %}
