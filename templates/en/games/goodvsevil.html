@@ -161,5 +161,8 @@
 </div>
 <script src="/js/equalize.min.js" type="text/javascript"></script>
 <script>
-  $('#width-example').equalize('innerHeight');
+$(window).resize(function(){
+    // Or you can switch to using an ID
+    $('#width-example').height($('#width-example').width());
+}).resize();
 </script>{% endblock %}
