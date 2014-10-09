@@ -255,10 +255,7 @@
 <script>
 $(window).resize(function(){
 
-      // If there are multiple elements with the same class, "main"
-      $('#width-example').each(function() {
-          $(this).height($(this).width());
-      });
+      $('#width-example').height($('#width-example').width());
 }).resize();
 </script>
 </div><script>
