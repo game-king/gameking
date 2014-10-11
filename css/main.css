@@ -212,10 +212,17 @@ a:hover {
   -o-transition: margin 0.3s ease;
   -ms-transition: margin 0.3s ease;
   transition: margin 0.3s ease;
+
+  background-color: #9575cd;
 }
 #maike .main.menu iframe {
   margin: 0px 0px 0px 0px;
 }
+
+#maike .sidebar.menu {
+  background-color: #7e57c2;
+}
+
 /* lists */
 #maike .features {
   list-style-position: inside;
@@ -1519,4 +1526,108 @@ body.progress .ui.progress .bar {
     width: auto;
     padding: 0% 23%;
   }
+}
+
+
+
+mark.deeppurple300 {
+  color:#9575cd;
+  background: none;
+}
+mark.deeppurple300:hover {
+  color:#673ab7;
+  background: none;
+}
+mark.deeppurple400 {
+  color:#7e57c2;
+  background: none;
+}
+mark.deeppurple500 {
+  color:#673ab7;
+  background: none;
+}
+
+mark.red300 {
+  color:#f36c60;
+  background: none;
+}
+mark.red300:hover {
+  color:#e51c23;
+  background: none;
+}
+mark.red400 {
+  color:#e84e40;
+  background: none;
+}
+mark.red500 {
+  color:#e51c23;
+  background: none;
+}
+
+mark.deeporange300 {
+  color:#ff8a65;
+  background: none;
+}
+mark.deeporange300:hover {
+  color:#ff5722;
+  background: none;
+}
+mark.deeporange400 {
+  color:#ff7043;
+  background: none;
+}
+mark.deeporange500 {
+  color:#ff5722;
+  background: none;
+}
+
+mark.brown300 {
+  color:#a1887f;
+  background: none;
+}
+mark.brown300:hover {
+  color:#795548;
+  background: none;
+}
+mark.brown400 {
+  color:#8d6e63;
+  background: none;
+}
+mark.brown500 {
+  color:#795548;
+  background: none;
+}
+
+mark.indigo300 {
+  color:#7986cb;
+  background: none;
+}
+mark.indigo300:hover {
+  color:#3f51b5;
+  background: none;
+}
+mark.indigo400 {
+  color:#5c6bc0;
+  background: none;
+}
+mark.indigo500 {
+  color:#3f51b5;
+  background: none;
+}
+
+mark.green300 {
+  color:#42bd41;
+  background: none;
+}
+mark.green300:hover {
+  color:#259b24;
+  background: none;
+}
+mark.green400 {
+  color:#2baf2b;
+  background: none;
+}
+mark.green500 {
+  color:#259b24;
+  background: none;
 }
