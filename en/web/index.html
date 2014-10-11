@@ -143,8 +143,15 @@
       <br/>
       <div style="text-align: center; font-size: 12px; font-family: Helvetica">CREATED BY <a href="http://goo.gl/DHiQ0h">@FERRONSAYS</a>. INSPIRED BY <a href="http://goo.gl/IuybCe">@VLAMBEER</a>'S LUFTRAUSERS</div>
   </div>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 </div>
+<script>
+document.documentElement.addEventListener('keydown', function (e) {
+    if ( ( e.keycode || e.which ) == 32) {
+        e.preventDefault();
+    }
+}, false);
+</script>
 <!-- build:js assets/scripts/main.js -->
 <script src="assets/scripts/core/jsfxr.js"></script>
 <script src="assets/scripts/core/class.js"></script>
