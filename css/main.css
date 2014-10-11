@@ -238,6 +238,11 @@ a:hover {
   color: #fff;
 }
 
+#maike .active.item.purple {
+  border-color: #673ab7!important;
+  color: #673ab7!important;
+}
+
 /* lists */
 #maike .features {
   list-style-position: inside;
