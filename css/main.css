@@ -224,7 +224,17 @@ a:hover {
 }
 
 #maike .ui.green.button {
-  background-color: #7e57c2;
+  background-color: #42bd41;
+  color: #fff;
+}
+
+#maike .ui.blue.button {
+  background-color: #91a7ff;
+  color: #fff;
+}
+
+#maike .ui.red.button {
+  background-color: #f36c60;
   color: #fff;
 }
 
