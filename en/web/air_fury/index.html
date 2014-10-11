@@ -1,182 +1,82 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Game King</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-
-  <link rel="stylesheet" media="screen, projection" href="assets/styles/screen.css" />
-  <link rel="stylesheet" type="text/css" href="/css/main.css">
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/css/semantic.min.css">
-
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="/js/history.js"></script>
-  <script src="/js/easing.js"></script>
-  <script src="/js/tablesort.js"></script>
-  <script src="/js/waypoints.js"></script>
-  <script src="/js/semantic.min.js"></script>
-  <script src="/js/main.js"></script>
-
+    <title>Air Fury</title>
+    <!-- build:css assets/styles/screen.css -->
+    <link rel="stylesheet" media="screen, projection" href="assets/styles/screen.css" />
+    <!-- endbuild -->
 </head>
-<body id="maike" ontouchstart="">
-  <!--[if lt IE 8]>
-  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://www.google.com/chrome/browser/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-<div class="ui large vertical inverted labeled icon sidebar menu" id="menu">
-  <a class="hide item">
-    <i class="fa fa-close"></i> Hide Menu
-  </a>
-  <a class="item" href="http://gameking.io/en/home">
-    <strong><h2>Game King</h2></strong>
-  </a>
-  <a class="item" href="http://gameking.io/en/web">
-    <strong>Web Games</strong>
-  </a>
-  <a class="item" href="http://gameking.io/en/android">
-    <strong>Android Games</strong>
-  </a>
-  <a class="item" href="http://gameking.io/en/ios">
-    <strong>iOS Games</strong>
-  </a>
-  <div class="item">
-    <b>Recommended</b>
-    <div class="menu">
-      <a class="item" href="http://imgasm.com">imgasm</a>
-      <a class="item" href="http://quotestic.com">Majestic Quotes</a>
-    </div>
-  </div>
-  <div class="item">
-    <b>About</b>
-    <div class="menu">
-      <a class="item" href="http://gameking.io/en/about">About</a>
-      <a class="item" href="http://gameking.io/en/privacy">Privacy</a>
-    </div>
-  </div>
-</div>
-<div class="ui fixed inverted main menu">
-  <div class="container">
-    <a class="launch popup item" data-content="Show/Hide Menu" data-variation="inverted"><i class="fa fa-th-list"></i> Game King</a>
-    <a class="popup item" data-content="Web Games" data-variation="inverted" href="http://gameking.io/en/web">
-      <i class="fa fa-html5"></i>
-    </a>
-    <a class="popup item" data-content="Android Games" data-variation="inverted" href="http://gameking.io/en/android">
-      <i class="fa fa-android"></i>
-    </a>
-    <a class="popup item" data-content="iOS Games" data-variation="inverted" href="http://gameking.io/en/ios">
-      <i class="fa fa-apple"></i>
-    </a>
-    <div class="right menu">
-      <div class="ui simple dropdown item">
-        <i class="fa fa-globe"></i>
-        <div class="menu">
 
-<a class="active item">English</a>
-<a class="item" href="http://gameking.io/cn/ios">汉语</a>
+<body>
+    <div id="w">
+        <div id="ldng">LOADING</div>
+        <div id="ss">
+            <div id="title">AIR FURY</div>
+            <div id="instr">
+                PRESS W or UP
+            </div>
         </div>
-      </div>
+        <div id="pz">
+            <div>||</div>
+        </div>
+        <div id="gmo">
+            <div>
+                <div style="font-size: 72px">GAME OVER</div>
+                <div id="fscore"></div>
+                <div id="hscore">Highscore!</div>
+                <br/>
+                <div>PRESS W or UP TO REPLAY</div>
+            </div>
+        </div>
+        <div id="hud">
+            <div id="score"></div>
+            <div id="hp"></div>
+            <div id="power"></div>
+        </div>
+        <canvas id="g"></canvas>
+        <canvas id="h2o"></canvas>
     </div>
-  </div>
-</div>
-<div class="main container">
+    <div id="w1">
+        <div style="font-family: Helvetica">
+            <h2>CONTROLS:</h2>
+            W or Up to move forward. A or Left and D or Right to turn. Space to shoot. Shift to use Focus, your slow-motion power. Stop shooting to repair. Press P to toggle pause.
+        </div>
+        <br/>
+        <div style="text-align: center; font-size: 12px; font-family: Helvetica">CREATED BY <a href="http://goo.gl/DHiQ0h">@FERRONSAYS</a>. INSPIRED BY <a href="http://goo.gl/IuybCe">@VLAMBEER</a>'S LUFTRAUSERS</div>
+    </div>
 
-<div class="peek">
-  <div class="ui vertical pointing secondary menu">
-    <a class="item" href="http://gameking.io/en/web">Web Games</a>
-    <a class="active item red" href="http://gameking.io/en/web/air_fury">Air Fury</a>
-    <a class="item" href="http://gameking.io/en/">game</a>
-    <a class="item" href="http://gameking.io/en/ios">game</a>
-  </div>
-</div>
-
-<div class="segment">
-  <h2 class="ui dividing header">Air Fury</h2>
-  <div id="w">
-      <div id="ldng">LOADING</div>
-      <div id="pz">
-          <div>||</div>
-      </div>
-      <div id="gmo">
-          <div>
-              <div style="font-size: 72px">GAME OVER</div>
-              <div id="fscore"></div>
-              <div id="hscore">Highscore!</div>
-              <br/>
-              <div>PRESS W or UP TO REPLAY</div>
-          </div>
-      </div>
-      <div id="hud">
-          <div id="score"></div>
-          <div id="hp"></div>
-          <div id="power"></div>
-      </div>
-      <canvas id="g"></canvas>
-      <canvas id="h2o"></canvas>
-  </div>
-  <div>
-      <div style="font-family: Helvetica">
-          <h2>CONTROLS:</h2>
-          Press W or Up-arrow to begin.
-          <br>W or Up to move forward. A or Left and D or Right to turn. Space to shoot. Shift to use Focus, your slow-motion power. Stop shooting to repair. Press P to toggle pause.
-      </div>
-      <br/>
-      <div style="text-align: center; font-size: 12px; font-family: Helvetica">CREATED BY <a href="http://goo.gl/DHiQ0h">@FERRONSAYS</a>. INSPIRED BY <a href="http://goo.gl/IuybCe">@VLAMBEER</a>'S LUFTRAUSERS</div>
-  </div>
-
-</div>
-<script>
-document.documentElement.addEventListener('keydown', function (e) {
-    if ( ( e.keycode || e.which ) == 32) {
-        e.preventDefault();
-    }
-}, false);
-</script>
-<!-- build:js assets/scripts/main.js -->
-<script src="assets/scripts/core/jsfxr.js"></script>
-<script src="assets/scripts/core/class.js"></script>
-<script src="assets/scripts/core/V2.js"></script>
-<script src="assets/scripts/core/Camera.js"></script>
-<script src="assets/scripts/core/GameNode.js"></script>
-<script src="assets/scripts/core/Audio.js"></script>
-<script src="assets/scripts/controllers/InputCtrl.js"></script>
-<script src="assets/scripts/controllers/SpawnCtrl.js"></script>
-<script src="assets/scripts/controllers/MigCtrl.js"></script>
-<script src="assets/scripts/controllers/ShipCtrl.js"></script>
-<script src="assets/scripts/collisions/Collisions.js"></script>
-<script src="assets/scripts/collisions/Body.js"></script>
-<script src="assets/scripts/entities/Background.js"></script>
-<script src="assets/scripts/entities/GameObject.js"></script>
-<script src="assets/scripts/entities/Sprite.js"></script>
-<script src="assets/scripts/entities/Bullet.js"></script>
-<script src="assets/scripts/entities/Ocean.js"></script>
-<script src="assets/scripts/ai/Behavior.js"></script>
-<script src="assets/scripts/ai/ChaseBehavior.js"></script>
-<script src="assets/scripts/ai/EvadeBehavior.js"></script>
-<script src="assets/scripts/ai/MaydayBehavior.js"></script>
-<script src="assets/scripts/entities/Particle.js"></script>
-<script src="assets/scripts/entities/Emitter.js"></script>
-<script src="assets/scripts/entities/Plane.js"></script>
-<script src="assets/scripts/entities/Player.js"></script>
-<script src="assets/scripts/entities/Turret.js"></script>
-<script src="assets/scripts/entities/Ship.js"></script>
-<script src="assets/scripts/app.js"></script>
-<script src="assets/scripts/main.js"></script>
-<!-- endbuild -->
+    <!-- build:js assets/scripts/main.js -->
+    <script src="assets/scripts/core/jsfxr.js"></script>
+    <script src="assets/scripts/core/class.js"></script>
+    <script src="assets/scripts/core/V2.js"></script>
+    <script src="assets/scripts/core/Camera.js"></script>
+    <script src="assets/scripts/core/GameNode.js"></script>
+    <script src="assets/scripts/core/Audio.js"></script>
+    <script src="assets/scripts/controllers/InputCtrl.js"></script>
+    <script src="assets/scripts/controllers/SpawnCtrl.js"></script>
+    <script src="assets/scripts/controllers/MigCtrl.js"></script>
+    <script src="assets/scripts/controllers/ShipCtrl.js"></script>
+    <script src="assets/scripts/collisions/Collisions.js"></script>
+    <script src="assets/scripts/collisions/Body.js"></script>
+    <script src="assets/scripts/entities/Background.js"></script>
+    <script src="assets/scripts/entities/GameObject.js"></script>
+    <script src="assets/scripts/entities/Sprite.js"></script>
+    <script src="assets/scripts/entities/Bullet.js"></script>
+    <script src="assets/scripts/entities/Ocean.js"></script>
+    <script src="assets/scripts/ai/Behavior.js"></script>
+    <script src="assets/scripts/ai/ChaseBehavior.js"></script>
+    <script src="assets/scripts/ai/EvadeBehavior.js"></script>
+    <script src="assets/scripts/ai/MaydayBehavior.js"></script>
+    <script src="assets/scripts/entities/Particle.js"></script>
+    <script src="assets/scripts/entities/Emitter.js"></script>
+    <script src="assets/scripts/entities/Plane.js"></script>
+    <script src="assets/scripts/entities/Player.js"></script>
+    <script src="assets/scripts/entities/Turret.js"></script>
+    <script src="assets/scripts/entities/Ship.js"></script>
+    <script src="assets/scripts/app.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <!-- endbuild -->
 </body>
+
 </html>

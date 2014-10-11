@@ -1,8 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    overflow: hidden;
     font-family: Impact, Charcoal, sans-serif;
     letter-spacing: 2px;
+}
+body {
+    background: #D3EDFF;
 }
 canvas {
     width: 800px;
@@ -15,6 +19,7 @@ a {
 }
 div {
     z-index: 2;
+    position: relative;
 }
 /* Wrappers */
 
