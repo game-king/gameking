@@ -223,6 +223,11 @@ a:hover {
   background-color: #7e57c2;
 }
 
+#maike .ui.green.button {
+  background-color: #7e57c2;
+  color: #fff;
+}
+
 /* lists */
 #maike .features {
   list-style-position: inside;
