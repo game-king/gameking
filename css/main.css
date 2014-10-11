@@ -243,6 +243,23 @@ a:hover {
   color: #673ab7!important;
 }
 
+#maike .active.item.red {
+  border-color: #e51c23!important;
+  color: #e51c23!important;
+}
+
+#maike .active.item.blue {
+  border-color: #5677fc!important;
+  color: #5677fc!important;
+}
+
+#maike .active.item.green {
+  border-color: #259b24!important;
+  color: #259b24!important;
+}
+
+
+
 /* lists */
 #maike .features {
   list-style-position: inside;
