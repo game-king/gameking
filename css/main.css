@@ -215,12 +215,18 @@ a:hover {
 
   background-color: #9575cd;
 }
+#maike .main.menu.red {
+  background-color: #f36c60;
+}
 #maike .main.menu iframe {
   margin: 0px 0px 0px 0px;
 }
 
 #maike .sidebar.menu {
   background-color: #7e57c2;
+}
+#maike .sidebar.menu.red {
+  background-color: #e84e40;
 }
 
 #maike .ui.green.button {
