@@ -2,20 +2,39 @@
 	background-color: #f36c60;
 }
 
-#maike .ui.four.items>.item {
-	width: 24%;
-  margin-left: .5%;
-  margin-right: .5%;
+
+#maike .ui.one.items>.item {
+  width: 100%;
 }
 
 #maike .ui.two.items {
   margin-left: -.5%;
   margin-right: -.5%;
 }
+#maike .ui.two.items>.item {
+  width: 49%;
+  margin-left: .5%;
+  margin-right: .5%;
+}
 
 #maike .ui.three.items {
   margin-left: -.5%;
   margin-right: -.5%;
+}
+#maike .ui.three.items>.item {
+  width: 32.333%;
+  margin-left: .5%;
+  margin-right: .5%;
+}
+
+#maike .ui.four.items {
+  margin-left: -.5%;
+  margin-right: -.5%;
+}
+#maike .ui.four.items>.item {
+  width: 24%;
+  margin-left: .5%;
+  margin-right: .5%;
 }
 
 #maike .ui.items>.item, .ui.items>.row>.item {
