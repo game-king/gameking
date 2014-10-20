@@ -8,6 +8,16 @@
   margin-right: .5%;
 }
 
+#maike .ui.two.items {
+  margin-left: -.5%;
+  margin-right: -.5%;
+}
+
+#maike .ui.three.items {
+  margin-left: -.5%;
+  margin-right: -.5%;
+}
+
 #maike .ui.items>.item, .ui.items>.row>.item {
 display: block;
 float: left;
