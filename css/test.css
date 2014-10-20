@@ -1,0 +1,7 @@
+#maike .main.menu.red {
+	background-color: #f36c60;
+}
+
+#maike .ui.four.items>.item {
+	width: 50%;
+}
