@@ -3,5 +3,25 @@
 }
 
 #maike .ui.four.items>.item {
-	width: 50%;
+	width: 24%;
+  margin-left: .5%;
+  margin-right: .5%;
+}
+
+#maike .ui.items>.item, .ui.items>.row>.item {
+display: block;
+float: left;
+position: relative;
+top: 0;
+width: 316px;
+background-color: #FFF;
+line-height: 1.2;
+font-size: 1em;
+-webkit-box-shadow: none;
+box-shadow: none;
+border-radius: 0em;
+-webkit-transition: none;
+-moz-transition: none;
+transition: none;
+padding: 0;
 }
